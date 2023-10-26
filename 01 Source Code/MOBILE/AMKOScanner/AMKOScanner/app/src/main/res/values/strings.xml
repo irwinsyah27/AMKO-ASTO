@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AMKO Scanner</string>
+    <string name="title_activity_ticket">Book Ticket</string>
+    <string name="lbl_duration">DURATION</string>
+    <string name="lbl_genre">GENRE</string>
+    <string name="lbl_rating">RATING</string>
+    <string name="lbl_price">PRICE</string>
+    <string name="btn_buy_now">BUY NOW</string>
+    <string name="btn_coming_soon">COMING SOON</string>
+    <string name="msg_no_ticket_found">No ticket found. Try scanning the QR Codes from http://api.androidhive.info/qrcodes/</string>
+    <string name="support_by">Support By ICT ASTO</string>
+    <string name="title_activity_scan">Scan</string>
+    <string name="title_activity_home">Beranda</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

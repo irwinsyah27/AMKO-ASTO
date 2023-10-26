@@ -1,0 +1,73 @@
+﻿@model AMKO.Models.LoginViewModel
+@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated && ViewBag.isValidAccount == "1")
+{
+    List<AMKO.Models.cusp_GetProfileMenuResult> menuList = ViewBag.myAccount.MENU;
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle dropdown-toggle-custom" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> @ViewBag.myAccount.NAME  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <a href="#">@ViewBag.myAccount.GPID_DESC</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="javascript:document.getElementById('logoutForm').submit()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        <!-- /.navbar-top-links -->
+    }
+
+    <div class="navbar-default sidebar navbar-collapse" role="navigation">
+        <div class="sidebar-nav">
+            <ul class="nav side-nav" id="side-menu">
+
+                @foreach (var mp in menuList.Where(f => f.PARENT_ID == "0"))
+                {
+                    <li>
+                        @if (mp.MENU_LINK == "#")
+                        {
+                            <a class="sidebar-menu-custom" href="#"><i class="fa fa-folder fa-fw"></i> @mp.MENU_DESC<span class="fa arrow"></span></a>
+                        }
+                        else
+                        {
+                            <a class="sidebar-menu-custom" href="@ViewBag.myAccount.WEB_APP_PATH@mp.MENU_LINK"><i class="fa fa-folder fa-fw"></i> @mp.MENU_DESC</a>
+                        }
+
+                        @if (menuList.Count(p => p.PARENT_ID == mp.MENU_PID) > 0)
+                        {
+                            @:<ul class="nav nav-second-level">
+                        }
+                        @RenderMenuItem(menuList, mp)
+                        @if (menuList.Count(p => p.PARENT_ID == mp.MENU_PID) > 0)
+                        {
+                            @:</ul>
+                        }
+                    </li>
+                }
+
+                @helper RenderMenuItem(List<AMKO.Models.cusp_GetProfileMenuResult> menuList, AMKO.Models.cusp_GetProfileMenuResult mi)
+                {
+foreach (var cp in menuList.Where(p => p.PARENT_ID == mi.MENU_PID))
+{
+        <li>
+            <a class="sidebar-sub-menu-custom" href="@ViewBag.myAccount.WEB_APP_PATH@cp.MENU_LINK"><i class="fa fa-file fa-fw"></i> @cp.MENU_DESC</a>
+        </li>
+}
+}
+            </ul>
+        </div>
+        <!-- /.sidebar-collapse -->
+    </div>
+    <!-- /.navbar-static-side -->
+}

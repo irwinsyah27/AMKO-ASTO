@@ -1,0 +1,245 @@
+﻿@{
+    ViewBag.Title = "Master Asset";
+    ViewBag.dashboard = "Asset Extracomptable & Fix Asset";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+    ViewBag.pathParent = Url.Content("~").Substring(0, Url.Content("~").Length - 1);
+}
+
+
+<input type="hidden" id="urlPath" name="urlPath" value="@ViewBag.pathParent" />
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <div class="col-md-12 col-xs-12">
+            <button id="btn_tambah_asset" onclick="tambahAsset()" class="btn btn-primary"><span class="glyphicon glyphicon-plus">&nbsp;</span>Tambah Asset</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-12 col-xs-12">
+            <div id="grid"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="display:none">
+
+    <div id="wnd_image">
+        <img id="ig_show" src="" style="width:400px; height:400px" />
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        loadGrid();
+
+        $("#wnd_image").kendoWindow({
+            width: "500px",
+            height: "500px",
+            title: "Gambar / Foto",
+            visible: false,
+            modal: true,
+            actions: [
+                "Close"
+            ],
+            //close: onClose
+        })
+
+
+    });
+
+    function loadGrid() {
+        $("#grid").empty();
+        var grid = $("#grid").kendoGrid({
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: {
+                        url: $("#urlPath").val() + "/Asset/AjaxRead",
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status == 0) {
+                                alert(data.responseJSON.error);
+                            }
+
+                        }
+                    },
+
+                    destroy: {
+                        url: $("#urlPath").val() + "/Asset/AjaxDelete",
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status) {
+                                $("#grid").data("kendoGrid").dataSource.read()
+                            } else {
+                                alert(data.responseJSON.error)
+                                $("#grid").data("kendoGrid").dataSource.read()
+                            }
+                        }
+                    },
+
+                    parameterMap: function (data, operation) {
+
+                        return kendo.stringify(data)
+
+                    }
+                },
+                pageSize: 100,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true,
+                schema: {
+                    data: "Data",
+                    total: "Total",
+                    model: {
+                        id: "ASSET_NUMBER",
+                        fields: {
+                            //PID: { type: "string", filterable: true, sortable: true, editable: false },
+                            COA_CODE: { type: "string", filterable: true, sortable: true, editable: true },
+                            COA_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            SUB_ASSET_CODE: { type: "string", filterable: true, sortable: true, editable: true },
+                            SUB_ASSET_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            ASSET_CODE: { type: "string", filterable: true, sortable: true, editable: true },
+                            ASSET_NUMBER: { type: "string", filterable: true, sortable: true, editable: true },
+                            ASSET_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            ASSET_DATE: { type: "date", filterable: true, sortable: true, editable: true },
+                            ST_DATE: { type: "date", filterable: true, sortable: true, editable: true },
+                            MERK_CODE: { type: "string", filterable: true, sortable: true, editable: true },
+                            MERK_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            SN: { type: "string", filterable: true, sortable: true, editable: true },
+                            EGI_ID: { type: "string", filterable: true, sortable: true, editable: true },
+                            EGI_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            TYPE_CODE: { type: "string", filterable: true, sortable: true, editable: true },
+                            TYPE_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            NO_PR: { type: "string", filterable: true, sortable: true, editable: true },
+                            NO_PO: { type: "string", filterable: true, sortable: true, editable: true },
+                            PIC: { type: "string", filterable: true, sortable: true, editable: true },
+                            PIC_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            DEPT_CODE: { type: "string", filterable: true, sortable: true, editable: true },
+                            ORDER_BY: { type: "string", filterable: true, sortable: true, editable: true },
+                            ORDER_BY_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            UE: { type: "number", filterable: true, sortable: true, editable: true },
+                            AMOUNT: { type: "number", filterable: true, sortable: true, editable: true },
+                            COND_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            MUTASI_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            LOCATION_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                            REMARK: { type: "string", filterable: true, sortable: true, editable: true },
+                            //LAMA_ASSET: { type: "number", filterable: true, sortable: true, editable: true },
+                            IMG: { type: "string", filterable: true, sortable: true, editable: true },
+                            //ACCUM_DEPRE_PREV_YEAR: { type: "number", filterable: true, sortable: true, editable: true },
+                            //DEPRE_MONTH: { type: "number", filterable: true, sortable: true, editable: true },
+                            //ACCUM_DEPRE_TOTAL: { type: "number", filterable: true, sortable: true, editable: true },
+                            //BOOK_VALUE: { type: "number", filterable: true, sortable: true, editable: true },
+                            //ACCUM_DEPRE_THIS_YEAR: { type: "number", filterable: true, sortable: true, editable: true },
+                        }
+                    }
+                }
+            },
+            height: 500,
+            filterable: true,
+            sortable: true,
+            pageable: true,
+            resizable: true,
+            groupable: false,
+            pageable: {
+                refresh: true,
+                buttonCount: 10,
+                input: true,
+                pageSizes: [10, 20, 50, 100, 1000, 100000],
+                info: true,
+                messages: {
+                }
+            },
+            editable: "inline",
+            columns: [
+               {
+                    title: "No",
+                    width: "50px",
+                    template: "#= ++rowNo #",
+                    filterable: false,
+                    locked: true
+               },
+                { field: "COA_CODE", title: "Kode COA", width: "150px" },
+                { field: "COA_NAME", title: "Nama COA", width: "150px" },
+                { field: "SUB_ASSET_CODE", title: "Kode Sub Asset", width: "150px" },
+                { field: "SUB_ASSET_NAME", title: "Nama Sub Asset", width: "150px" },
+                { field: "ASSET_CODE", title: "Kode Asset", width: "150px" },
+                { field: "ASSET_NUMBER", title: "No. Asset", width: "200px", locked: true }, 
+                { field: "ASSET_NAME", title: "Nama Asset", width: "150px" },
+                { field: "ASSET_DATE", title: "Tgl. Asset", width: "120px", format: "{0:dd/MM/yyyy}" },
+                { field: "ST_DATE", title: "Tgl. Serah Terima", width: "120px", format: "{0:dd/MM/yyyy}" },
+                { field: "MERK_CODE", title: "Merk", width: "100px" },
+                { field: "MERK_NAME", title: "Merk", width: "100px" },
+                { field: "SN", title: "SN", width: "130px" },
+                { field: "EGI_ID", title: "ID EGI", width: "150px" },
+                { field: "EGI_NAME", title: "Nama EGI", width: "150px" },
+                { field: "TYPE_CODE", title: "Kode Asset", width: "130px" },
+                { field: "TYPE_NAME", title: "Jenis Asset", width: "150px" },
+                { field: "NO_PR", title: "No. PR", width: "100px" },
+                { field: "NO_PO", title: "No. PO", width: "100px" },
+                { field: "PIC", title: "PIC", width: "150px" },
+                { field: "PIC_NAME", title: "Nama PIC", width: "150px" },
+                { field: "DEPT_CODE", title: "Dept.", width: "120px" },
+                //{ field: "DEPT_NAME", title: "Dept.", width: "120px" },
+                { field: "ORDER_BY", title: "Order By", width: "150px" },
+                { field: "ORDER_BY_NAME", title: "Order By Name", width: "150px" },
+                { field: "UE", title: "UE (bulan)", width: "150px" },
+                { field: "AMOUNT", title: "Amount", width: "120px" },
+                //{ field: "COND_CODE", title: "Kondisi", width: "100px" },
+                { field: "COND_NAME", title: "Kondisi", width: "100px" },
+                { field: "MUTASI_NAME", title: "Site", width: "100px" },
+                { field: "LOCATION_NAME", title: "Lokasi", width: "100px" },
+                //{ field: "LAMA_ASSET", title: "Umur (hari)", width: "150px" },
+                { field: "REMARK", title: "Remark", width: "150px" },
+                {
+                    field: "IMG", title: "Foto", width: "200px", template: '<a href="\\#" onclick="showImage(this)">' + '#=IMG != null ? "Tampilkan Foto" : "" #' + '</a>',
+                },
+                //{ field: "ACCUM_DEPRE_PREV_YEAR", title: "Accum Depre Prev Year", width: "150px" },
+                //{ field: "DEPRE_MONTH", title: "Depre Month", width: "150px" },
+                //{ field: "ACCUM_DEPRE_TOTAL", title: "Accum Depre Total", width: "150px" },
+                //{ field: "BOOK_VALUE", title: "Book Value", width: "150px" },
+                //{ field: "ACCUM_DEPRE_THIS_YEAR", title: "Accum Depre This Year", width: "150px" },
+                {
+                    command: [{ text: "Edit", click: edit }, { text: "Histori", click: histori }, "destroy"], title: "Action", width: "300px"
+                }, 
+             
+            ],
+            dataBinding: function () {
+                window.rowNo = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+            }
+        });
+    }
+
+    function histori(e) {
+        e.preventDefault;
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        window.open($("#urlPath").val() + "/Histori/index?asset_no=" + dataItem.ASSET_NUMBER)
+    }
+
+    function edit(e) {
+        e.preventDefault;
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+        window.location = ($("#urlPath").val() + "/Asset/TransaksiAsset?status=UPDATE&asset_no=" + dataItem.ASSET_NUMBER)
+    }
+
+    function tambahAsset() {
+        window.location = ($("#urlPath").val() + "/Asset/TransaksiAsset?status=INSERT&asset_no=0")
+    }
+
+    function showImage(e) {
+        e.preventDefault;
+        var dataItem = $("#grid").data("kendoGrid").dataItem($(e).closest("tr"));
+
+        $("#ig_show").attr('src', $("#urlPath").val() + dataItem.IMG);
+        
+
+        $("#wnd_image").data("kendoWindow").center().open();
+    }
+</script>
+

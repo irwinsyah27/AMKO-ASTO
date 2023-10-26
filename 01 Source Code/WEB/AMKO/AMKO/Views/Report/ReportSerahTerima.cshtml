@@ -1,0 +1,248 @@
+﻿@{
+    ViewBag.Title = "Report";
+    ViewBag.dashboard = "BA Serah Terima Asset";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+    ViewBag.pathParent = Url.Content("~").Substring(0, Url.Content("~").Length - 1);
+}
+
+<input type="hidden" id="urlPath" name="urlPath" value="@ViewBag.pathParent" />
+
+<div class="row" id="form">
+
+    <div class="col-md-12"> 
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">PIC</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_pic" data-bind="value: PIC" style="width:100%" class="form-control" readonly />
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" id="btn_cariPic" onclick="viewEmployee() "><span class="glyphicon glyphicon-search">&nbsp;</span>Cari</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Lokasi</label>
+                <div class="col-md-4">
+                    <input type="text" id="dd_lokasi" name="dd_lokasi" data-bind="value: LOCATION_CODE" style="width:100%" />
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Periode Awal</label>
+                <div class="col-md-1">
+                    <input  id="dt_from"   class="form-control"  />
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Periode Akhir</label>
+                <div class="col-md-1">
+                    <input id="dt_to" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2"></label>
+                <div class="col-md-1">
+                    <button class="btn btn-primary" onclick="bindReport()"><span class="glyphicon glyphicon-download">&nbsp;</span>Submit</button> 
+                </div>
+            </div>
+        </div>
+       
+        <hr />
+
+
+    </div>
+
+</div>
+
+<div class="row" id="wnd_report">
+    <div class="col-md-12">
+        <iframe id="iframe_report" width="100%" height="560px" style="display:none"></iframe>
+    </div>
+</div>
+
+<div class="row" style="display:none">
+
+    <div id="wnd_employee">
+        <div id="gridEmployee"></div>
+    </div>
+
+</div>
+
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+
+        $("#dt_from").kendoDatePicker({
+            format: "yyyy-MM-dd",
+            value: new Date()
+        })
+
+        $("#dt_to").kendoDatePicker({
+            format: "yyyy-MM-dd",
+            value: new Date()
+        })
+
+        $("#wnd_employee").kendoWindow({
+            width: "800px",
+            height: "400px",
+            title: "Data Karyawan",
+            visible: false,
+            modal: true,
+            actions: [
+                "Close"
+            ],
+            //close: onClose
+        })
+
+
+
+    });
+
+    function loadGridEmployee() {
+        $("#gridEmployee").empty();
+        var grid = $("#gridEmployee").kendoGrid({
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: {
+                        url: $("#urlPath").val() + "/Asset/ReadEmployee",
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status == 0) {
+                                alert(data.responseJSON.error);
+                            }
+
+                        }
+                    },
+
+
+                    parameterMap: function (data, operation) {
+
+                        return kendo.stringify(data)
+
+                    }
+                },
+                pageSize: 100,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true,
+                schema: {
+                    data: "Data",
+                    total: "Total",
+                    model: {
+                        id: "Nrp",
+                        fields: {
+                            Nrp: { type: "string", filterable: true, sortable: true, editable: false },
+                            Nama: { type: "string", filterable: true, sortable: true, editable: false },
+                            JABATAN: { type: "string", filterable: true, sortable: true, editable: false },
+                            Departemen: { type: "string", filterable: true, sortable: true, editable: false },
+                        }
+                    }
+                }
+            },
+            height: 500,
+            filterable: true,
+            sortable: true,
+            pageable: true,
+            resizable: true,
+            groupable: false,
+            pageable: {
+                refresh: true,
+                buttonCount: 10,
+                input: true,
+                pageSizes: [10, 20, 50, 100, 1000, 100000],
+                info: true,
+                messages: {
+                }
+            },
+            editable: false,
+            columns: [
+                {
+                    command: [{ text: "Pilih", click: pilih }], title: "Action", width: "100px"
+                },
+                { field: "Nrp", title: "NRP", width: "100px", format: "{0:dd/MM/yyyy}" },
+                { field: "Nama", title: "Nama", width: "150px" },
+                { field: "JABATAN", title: "Jabatan", width: "150px" },
+                { field: "Departemen", title: "Dept.", width: "150px" },
+            ],
+            dataBinding: function () {
+                window.rowNo = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+            }
+        });
+    }
+
+    $("#dd_lokasi").kendoDropDownList({
+        filter: "startswith",
+        dataSource: {
+            type: "json",
+            transport: {
+                read: {
+                    url: $("#urlPath").val() + "/Asset/AjaxReadLokasi",
+                    contentType: "application/json",
+                    type: "POST",
+                    cache: false
+                }
+            },
+            schema: {
+                data: "Data",
+                total: "Total"
+            }
+        },
+        dataTextField: "LOCATION_NAME",
+        dataValueField: "LOCATION_CODE",
+        optionLabel: "Pilih...",
+    });
+
+    function viewEmployee() {
+
+        loadGridEmployee()
+        $("#wnd_employee").data("kendoWindow").center().open();
+    }
+
+    function pilih(e) {
+        e.preventDefault;
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+      //  console.log(dataItem.Nrp);
+
+        $("#tx_pic").val(dataItem.Nrp)
+
+        $("#wnd_employee").data("kendoWindow").center().close();
+
+    }
+
+    function bindReport() {
+
+        $("#iframe_report").show();
+        var i_str_pic = $("#tx_pic").val();
+        var i_str_lokasi = $("#dd_lokasi").val();
+        var i_str_stFrom = $("#dt_from").val();
+        var i_str_stTo = $("#dt_to").val();
+
+        var frame = document.getElementById("iframe_report");
+        frame.src = "/Reports/Report_BASerahTerima.aspx?PIC=" + i_str_pic + "&LOKASI=" + i_str_lokasi + "&ST_FROM=" + i_str_stFrom + "&ST_TO=" + i_str_stTo;
+
+    }
+
+
+</script>

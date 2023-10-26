@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Histori Perpindahan Asset";
+    ViewBag.dashboard = "Histori Perpindahan Asset";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+    ViewBag.pathParent = Url.Content("~").Substring(0, Url.Content("~").Length - 1);
+}
+
+
+<input type="hidden" id="urlPath" name="urlPath" value="@ViewBag.pathParent" />
+<input type="hidden" id="hd_assetNo" value="@ViewData["asset_no"]" />
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <div class="col-md-12 col-xs-12">
+            <div id="grid"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        loadGrid();
+    });
+
+    function loadGrid() {
+        $("#grid").empty();
+        var grid = $("#grid").kendoGrid({
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: {
+                        url: $("#urlPath").val() + "/Histori/AjaxRead?s_str_assetNumber=" + $("#hd_assetNo").val(),
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status == 0) {
+                                alert(data.responseJSON.error);
+                            }
+
+                        }
+                    },
+
+
+                    parameterMap: function (data, operation) {
+
+                        return kendo.stringify(data)
+
+                    }
+                },
+                pageSize: 100,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true,
+                schema: {
+                    data: "Data",
+                    total: "Total",
+                    model: {
+                        id: "PID_HISTORI",
+                        fields: {
+                           
+                            HISTORY_DATE:   { type: "date", filterable: true, sortable: true, editable: false },
+                           
+                        }
+                    }
+                }
+            },
+            height: 500,
+            filterable: true,
+            sortable: true,
+            pageable: true,
+            resizable: true,
+            groupable: false,
+            pageable: {
+                refresh: true,
+                buttonCount: 10,
+                input: true,
+                pageSizes: [10, 20, 50, 100, 1000, 100000],
+                info: true,
+                messages: {
+                }
+            },
+            editable: false,
+            columns: [
+               {
+                    title: "No",
+                    width: "50px",
+                    template: "#= ++rowNo #",
+                    filterable: false
+               },
+                { field: "HISTORY_DATE", title: "Tanggal", width: "100px", format: "{0:dd/MM/yyyy}" },
+                { field: "ASSET_NUMBER", title: "No. Asset", width: "150px" },
+                { field: "ASSET_NAME", title: "Nama Asset", width: "150px" },
+                { field: "LOCATION_NAME", title: "Lokasi", width: "150px" },
+                { field: "COND_NAME", title: "Kondisi", width: "150px" },
+                { field: "PIC_NAME", title: "PIC", width: "150px" },
+                { field: "REMARK", title: "Remark", width: "150px" },
+            ],
+            dataBinding: function () {
+                window.rowNo = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+            }
+        });
+    }
+
+</script>
+
+
+

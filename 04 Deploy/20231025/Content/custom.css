@@ -1,0 +1,74 @@
+﻿body {
+}
+
+.k-link-custom-text {
+    color: #009688 !important;
+}
+
+.k-state-selected {
+    background-color: #009688 !important;
+    border-color: #009688 !important;
+}
+
+.k-button:active {
+    background-color: #009688 !important;
+    border-color: #009688 !important;
+}
+
+.form-control:active {
+    border-color: #009688 !important;
+}
+
+.form-control:focus {
+    border-color: #009688 !important;
+}
+
+.form-control option {
+    border-color: #009688 !important;
+}
+
+.k-textbox-1 {
+    width: 10% !important;
+}
+.k-textbox-2 {
+    width: 20% !important;
+}
+.k-textbox-3 {
+    width: 30% !important;
+}
+.k-textbox-3 {
+    width: 30% !important;
+}
+.k-textbox-4 {
+    width: 40% !important;
+}
+.k-textbox-5 {
+    width: 50% !important;
+}
+.k-textbox-6 {
+    width: 60% !important;
+}
+.k-textbox-7 {
+    width: 70% !important;
+}
+.k-textbox-8 {
+    width: 80% !important;
+}
+.k-textbox-9 {
+    width: 90% !important;
+}
+.k-textbox-10 {
+    width: 100% !important;
+}
+
+.org-left {
+    width: 55%;
+    float: left;
+    margin: 0 2%;
+}
+
+.org-right {
+    width: 35%;
+    float: left;
+    margin: 0 2%;
+}

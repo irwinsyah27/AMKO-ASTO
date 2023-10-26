@@ -1,0 +1,2440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\03. Project\01. Web\AMKO\04 Deploy\20220126</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/Uploads/DW.jpg">
+      <publishTime>11/15/2017 08:15:50</publishTime>
+    </File>
+    <File Include="App_Data/Uploads/kasur tenda komando.jpg">
+      <publishTime>11/15/2017 10:05:02</publishTime>
+    </File>
+    <File Include="bin/AMKO.dll">
+      <publishTime>11/29/2022 13:09:32</publishTime>
+    </File>
+    <File Include="bin/AMKO.dll.config">
+      <publishTime>11/29/2022 10:58:22</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/23/2017 09:13:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="bin/Kendo.DynamicLinq.dll">
+      <publishTime>04/14/2015 12:00:40</publishTime>
+    </File>
+    <File Include="bin/Kendo.Mvc.dll">
+      <publishTime>04/11/2022 14:24:13</publishTime>
+    </File>
+    <File Include="bin/Kendo.Mvc.resources.dll">
+      <publishTime>04/11/2022 14:24:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>10/23/2017 09:13:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>10/23/2017 09:13:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>10/23/2017 09:13:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/23/2017 09:13:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>10/23/2017 09:13:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>10/23/2017 09:13:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>10/23/2017 09:13:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>10/23/2017 09:13:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>10/23/2017 09:13:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>10/23/2017 09:13:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>10/23/2017 09:13:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>10/23/2017 09:13:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>10/23/2017 09:13:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>10/27/2017 01:25:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>10/27/2017 01:25:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/23/2017 09:13:16</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>10/23/2017 09:13:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>10/23/2017 09:13:36</publishTime>
+    </File>
+    <File Include="bin/System.Linq.Dynamic.dll">
+      <publishTime>04/14/2015 12:00:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/23/2017 09:13:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/23/2017 09:13:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>10/23/2017 09:13:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/23/2017 09:13:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/23/2017 09:13:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/23/2017 09:13:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>10/23/2017 09:13:16</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>10/23/2017 09:13:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>04/02/2022 16:00:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>10/23/2017 09:13:02</publishTime>
+    </File>
+    <File Include="Content/custom.css">
+      <publishTime>03/14/2016 16:42:28</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/04/2022 15:58:32</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/editor.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/loading-image.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/loading.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/slider-h.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/slider-v.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/sprite.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Black/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/editor.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/loading-image.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/loading.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/slider-h.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/slider-v.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/sprite.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/BlueOpal/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/editor.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/loading-image.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/loading.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/slider-h.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/slider-v.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/sprite.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Bootstrap/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/editor.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/loading-image.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/loading.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/slider-h.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/slider-v.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/sprite.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Default/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/editor.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/loading-image.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/loading.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/slider-h.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/slider-v.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/sprite.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/Flat/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/editor.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/loading-image.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/loading.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/slider-h.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/slider-v.gif">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/sprite.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/HighContrast/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/images/back.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/images/kendoui.ttf">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/images/kendoui.woff">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/images/wp8_icons.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/images/wp8_inverseicons.png">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.black.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.blueopal.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.bootstrap.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.common.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.black.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.blueopal.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.bootstrap.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.default.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.flat.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.highcontrast.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.metro.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.metroblack.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.moonlight.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.silver.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.dataviz.uniform.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.default.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.flat.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.highcontrast.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.icenium.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.metro.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.metroblack.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.all.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.android4.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.blackberry.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.common.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.flat.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.icenium.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.ios.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.meego.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.mobile.wp8.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.moonlight.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.rtl.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.silver.min.css">
+      <publishTime>05/03/2017 07:16:54</publishTime>
+    </File>
+    <File Include="Content/Kendo/kendo.uniform.min.css">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/editor.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/loading-image.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/loading.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/slider-h.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/slider-v.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/sprite.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Metro/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/editor.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/loading-image.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/loading.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/slider-h.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/slider-v.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/sprite.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/MetroBlack/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/editor.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/loading-image.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/loading.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/slider-h.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/slider-v.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/sprite.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Moonlight/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/editor.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/loading-image.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/loading.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/slider-h.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/slider-v.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/sprite.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Silver/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/brushed-metal.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots1.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots10.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots11.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots12.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots13.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots2.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots3.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots4.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots5.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots6.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots7.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots8.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/dots9.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/glass-lighter.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/glass.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/highlight.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/hsv-gradient.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/hue.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/leather1.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/leather2.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/noise.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/stripe1.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/stripe2.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/stripe3.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/stripe4.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/stripe5.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/stripe6.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/transparency.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/textures/transtexture.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/editor.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/imagebrowser.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/loading-image.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/loading.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/loading_2x.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/slider-h.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/slider-v.gif">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/sprite.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Kendo/Uniform/sprite_2x.png">
+      <publishTime>05/03/2017 07:16:56</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>10/23/2017 20:08:20</publishTime>
+    </File>
+    <File Include="Content/template/css/bootstrap-theme.css">
+      <publishTime>11/19/2015 13:11:50</publishTime>
+    </File>
+    <File Include="Content/template/css/bootstrap-theme.css.map">
+      <publishTime>11/19/2015 13:11:50</publishTime>
+    </File>
+    <File Include="Content/template/css/bootstrap-theme.min.css">
+      <publishTime>11/19/2015 13:11:50</publishTime>
+    </File>
+    <File Include="Content/template/css/bootstrap.css">
+      <publishTime>11/19/2015 13:11:48</publishTime>
+    </File>
+    <File Include="Content/template/css/bootstrap.css.map">
+      <publishTime>11/19/2015 13:11:50</publishTime>
+    </File>
+    <File Include="Content/template/css/bootstrap.min.css">
+      <publishTime>11/19/2015 13:11:50</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/.bower.json">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/.gitignore">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/.npmignore">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/bower.json">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/css/font-awesome.css">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/css/font-awesome.min.css">
+      <publishTime>04/02/2022 16:31:41</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/fonts/fontawesome-webfont .woff">
+      <publishTime>04/02/2022 16:33:45</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/fonts/fontawesome-webfont.eot">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/fonts/fontawesome-webfont.svg">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/fonts/fontawesome-webfont.ttf">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/fonts/fontawesome-webfont.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/fonts/FontAwesome.otf">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/bordered-pulled.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/core.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/extras.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/fixed-width.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/font-awesome.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/icons.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/larger.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/list.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/mixins.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/path.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/rotated-flipped.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/spinning.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/stacked.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/less/variables.less">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/font-awesome.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_bordered-pulled.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_core.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_extras.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_fixed-width.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_icons.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_larger.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_list.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_mixins.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_path.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_rotated-flipped.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_spinning.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_stacked.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/font-awesome/scss/_variables.scss">
+      <publishTime>11/19/2015 13:29:34</publishTime>
+    </File>
+    <File Include="Content/template/css/metisMenu.css">
+      <publishTime>11/19/2015 13:12:56</publishTime>
+    </File>
+    <File Include="Content/template/css/metisMenu.min.css">
+      <publishTime>11/19/2015 13:12:56</publishTime>
+    </File>
+    <File Include="Content/template/css/morris.css">
+      <publishTime>11/19/2015 13:13:48</publishTime>
+    </File>
+    <File Include="Content/template/css/sb-admin-2.css">
+      <publishTime>10/23/2017 21:03:58</publishTime>
+    </File>
+    <File Include="Content/template/css/timeline.css">
+      <publishTime>11/19/2015 13:13:18</publishTime>
+    </File>
+    <File Include="Content/template/img/img-login.jpg">
+      <publishTime>03/14/2016 15:11:18</publishTime>
+    </File>
+    <File Include="Content/template/js/bootstrap.js">
+      <publishTime>11/19/2015 13:16:32</publishTime>
+    </File>
+    <File Include="Content/template/js/bootstrap.min.js">
+      <publishTime>11/19/2015 13:16:32</publishTime>
+    </File>
+    <File Include="Content/template/js/jquery.js">
+      <publishTime>11/19/2015 13:15:56</publishTime>
+    </File>
+    <File Include="Content/template/js/jquery.min.js">
+      <publishTime>11/19/2015 13:15:56</publishTime>
+    </File>
+    <File Include="Content/template/js/jquery.min.map">
+      <publishTime>03/18/2022 08:37:30</publishTime>
+    </File>
+    <File Include="Content/template/js/jquery.min.map.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/template/js/metisMenu.js">
+      <publishTime>11/19/2015 13:12:56</publishTime>
+    </File>
+    <File Include="Content/template/js/metisMenu.min.js">
+      <publishTime>11/19/2015 13:12:56</publishTime>
+    </File>
+    <File Include="Content/template/js/morris-data.js">
+      <publishTime>11/19/2015 13:17:28</publishTime>
+    </File>
+    <File Include="Content/template/js/morris.js">
+      <publishTime>11/19/2015 13:17:10</publishTime>
+    </File>
+    <File Include="Content/template/js/morris.min.js">
+      <publishTime>11/19/2015 13:17:08</publishTime>
+    </File>
+    <File Include="Content/template/js/raphael-min.js">
+      <publishTime>11/19/2015 13:16:54</publishTime>
+    </File>
+    <File Include="Content/template/js/raphael.js">
+      <publishTime>11/19/2015 13:16:54</publishTime>
+    </File>
+    <File Include="Content/template/js/sb-admin-2.js">
+      <publishTime>04/21/2016 11:24:58</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/23/2017 09:12:44</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/23/2017 09:13:02</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/23/2017 09:13:02</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/23/2017 09:13:02</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/02/2022 15:58:32</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/23/2017 09:12:44</publishTime>
+    </File>
+    <File Include="Models/DB_APPS.dbml">
+      <publishTime>11/29/2022 13:09:04</publishTime>
+    </File>
+    <File Include="Models/DC_AMKO.dbml">
+      <publishTime>07/28/2022 08:42:33</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/11/2019 10:38:38</publishTime>
+    </File>
+    <File Include="Reports/Fixed_Asset_Consolidation_Report.aspx">
+      <publishTime>02/04/2022 13:18:28</publishTime>
+    </File>
+    <File Include="Reports/ReportAssetClass.aspx">
+      <publishTime>04/13/2022 08:32:48</publishTime>
+    </File>
+    <File Include="Reports/ReportFixAsset.aspx">
+      <publishTime>04/13/2022 07:37:00</publishTime>
+    </File>
+    <File Include="Reports/Report_Asset.aspx">
+      <publishTime>04/02/2022 15:26:53</publishTime>
+    </File>
+    <File Include="Reports/Report_BASerahTerima.aspx">
+      <publishTime>11/23/2017 01:42:32</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>10/23/2017 09:13:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>10/23/2017 09:13:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>10/23/2017 09:13:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>10/23/2017 09:13:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>10/23/2017 09:13:18</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>10/23/2017 09:13:18</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>10/23/2017 09:13:18</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/23/2017 09:13:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.af-ZA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.af.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.am-ET.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.am.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-AE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-BH.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-DZ.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-EG.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-IQ.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-JO.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-KW.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-LB.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-LY.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-MA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-OM.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-QA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-SA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-SY.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-TN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar-YE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ar.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.arn-CL.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.arn.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.as-IN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.as.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.az-Cyrl-AZ.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.az-Cyrl.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.az-Latn-AZ.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.az-Latn.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.az.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ba-RU.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ba.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.be-BY.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.be.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bg-BG.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bg.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bn-BD.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bn-IN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bn.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bo-CN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bo.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.br-FR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.br.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bs-Cyrl-BA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bs-Cyrl.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bs-Latn-BA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bs-Latn.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.bs.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ca-ES.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ca.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.co-FR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.co.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.cs-CZ.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.cs.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.cy-GB.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.cy.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.da-DK.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.da.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.de-AT.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.de-CH.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.de-DE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.de-LI.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.de-LU.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.de.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.dsb-DE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.dsb.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.dv-MV.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.dv.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.el-GR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.el.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-029.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-AU.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-BZ.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-CA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-GB.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-IE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-IN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-JM.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-MY.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-NZ.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-PH.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-SG.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-TT.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-US.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-ZA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en-ZW.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.en.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-AR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-BO.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-CL.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-CO.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-CR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-DO.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-EC.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-ES.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-GT.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-HN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-MX.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-NI.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-PA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-PE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-PR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-PY.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-SV.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-US.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-UY.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es-VE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.es.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.et-EE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.et.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.eu-ES.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.eu.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fa-IR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fa.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fi-FI.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fi.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fil-PH.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fil.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fo-FO.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fo.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fr-BE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fr-CA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fr-CH.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fr-FR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fr-LU.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fr-MC.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fr.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fy-NL.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.fy.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ga-IE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ga.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.gd-GB.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.gd.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.gl-ES.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.gl.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.gsw-FR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.gsw.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.gu-IN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.gu.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ha-Latn-NG.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ha-Latn.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ha.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.he-IL.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.he.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hi-IN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hi.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hr-BA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hr-HR.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hr.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hsb-DE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hsb.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hu-HU.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hu.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hy-AM.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.hy.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.id-ID.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.id.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ig-NG.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ig.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ii-CN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ii.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.is-IS.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.is.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.it-CH.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.it-IT.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.it.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.iu-Cans-CA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.iu-Cans.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.iu-Latn-CA.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.iu-Latn.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.iu.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ja-JP.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ja.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ka-GE.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ka.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.kk-KZ.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.kk.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.kl-GL.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.kl.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.km-KH.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.km.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.kn-IN.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.kn.min.js">
+      <publishTime>05/03/2017 07:17:16</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ko-KR.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ko.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.kok-IN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.kok.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ky-KG.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ky.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.lb-LU.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.lb.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.lo-LA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.lo.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.lt-LT.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.lt.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.lv-LV.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.lv.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mi-NZ.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mi.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mk-MK.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mk.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ml-IN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ml.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mn-Cyrl.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mn-MN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mn-Mong-CN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mn-Mong.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mn.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.moh-CA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.moh.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mr-IN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mr.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ms-BN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ms-MY.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ms.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mt-MT.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.mt.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nb-NO.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nb.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ne-NP.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ne.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nl-BE.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nl-NL.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nl.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nn-NO.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nn.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.no.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nso-ZA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.nso.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.oc-FR.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.oc.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.or-IN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.or.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.pa-IN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.pa.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.pl-PL.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.pl.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.prs-AF.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.prs.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ps-AF.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ps.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.pt-BR.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.pt-PT.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.pt.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.qut-GT.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.qut.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.quz-BO.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.quz-EC.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.quz-PE.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.quz.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.rm-CH.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.rm.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ro-RO.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ro.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ru-RU.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ru-UA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ru.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.rw-RW.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.rw.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sa-IN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sa.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sah-RU.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sah.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.se-FI.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.se-NO.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.se-SE.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.se.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.si-LK.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.si.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sk-SK.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sk.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sl-SI.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sl.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sma-NO.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sma-SE.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sma.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.smj-NO.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.smj-SE.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.smj.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.smn-FI.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.smn.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sms-FI.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sms.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sq-AL.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sq.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Cyrl-BA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Cyrl-CS.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Cyrl-ME.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Cyrl-RS.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Cyrl.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Latn-BA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Latn-CS.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Latn-ME.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Latn-RS.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr-Latn.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sr.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sv-FI.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sv-SE.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sv.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sw-KE.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.sw.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.syr-SY.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.syr.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ta-IN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ta.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.te-IN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.te.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tg-Cyrl-TJ.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tg-Cyrl.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tg.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.th-TH.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.th.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tk-TM.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tk.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tn-ZA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tn.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tr-TR.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tr.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tt-RU.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tt.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tzm-Latn-DZ.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tzm-Latn.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.tzm.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ug-CN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ug.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.uk-UA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.uk.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ur-PK.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.ur.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.uz-Cyrl-UZ.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.uz-Cyrl.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.uz-Latn-UZ.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.uz-Latn.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.uz.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.vi-VN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.vi.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.wo-SN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.wo.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.xh-ZA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.xh.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.yo-NG.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.yo.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-CHS.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-CHT.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-CN.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-Hans.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-Hant.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-HK.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-MO.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-SG.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh-TW.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zh.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zu-ZA.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/cultures/kendo.culture.zu.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/czAlertDialogs.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/jquery.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/jquery.min.map">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.all.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.aspnetmvc.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.autocomplete.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.binder.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.calendar.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.colorpicker.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.columnmenu.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.combobox.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.core.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.data.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.data.odata.min.js">
+      <publishTime>05/03/2017 07:17:18</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.data.xml.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.barcode.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.canvas.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.chart.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.chart.polar.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.core.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.gauge.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.qrcode.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.sparkline.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.stock.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.svg.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.themes.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dataviz.vml.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.datepicker.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.datetimepicker.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.draganddrop.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.dropdownlist.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.editable.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.editor.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.filtermenu.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.fx.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.grid.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.groupable.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.imagebrowser.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.list.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.listview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.menu.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.actionsheet.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.application.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.button.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.buttongroup.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.drawer.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.listview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.loader.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.modalview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.navbar.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.pane.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.popover.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.scroller.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.scrollview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.shim.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.splitview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.switch.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.tabstrip.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.mobile.view.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.multiselect.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.numerictextbox.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.pager.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.panelbar.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.popup.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.reorderable.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.resizable.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.router.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.scheduler.agendaview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.scheduler.dayview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.scheduler.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.scheduler.monthview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.scheduler.recurrence.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.scheduler.view.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.selectable.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.slider.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.sortable.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.splitter.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.tabstrip.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.timepicker.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.timezones.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.tooltip.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.touch.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.treeview.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.upload.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.userevents.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.validator.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.view.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.web.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/Kendo/kendo.window.min.js">
+      <publishTime>05/03/2017 07:17:20</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>10/23/2017 09:13:16</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>10/23/2017 09:13:18</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>10/23/2017 09:13:18</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>03/30/2022 15:55:13</publishTime>
+    </File>
+    <File Include="Uploads/DW.jpg">
+      <publishTime>11/18/2017 11:00:18</publishTime>
+    </File>
+    <File Include="Uploads/kasur tenda komando.jpg">
+      <publishTime>11/17/2017 21:04:14</publishTime>
+    </File>
+    <File Include="Views/Account/ConfirmEmail.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>11/23/2017 16:16:32</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPassword.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Account/ResetPasswordConfirmation.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Account/SendCode.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Account/VerifyCode.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Asset/Index.cshtml">
+      <publishTime>05/30/2022 14:33:03</publishTime>
+    </File>
+    <File Include="Views/Asset/TransaksiAsset.cshtml">
+      <publishTime>05/25/2022 09:53:47</publishTime>
+    </File>
+    <File Include="Views/Condition/Index.cshtml">
+      <publishTime>10/23/2017 21:00:14</publishTime>
+    </File>
+    <File Include="Views/Histori/Index.cshtml">
+      <publishTime>04/12/2022 09:46:09</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>10/23/2017 09:12:44</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>10/23/2017 09:12:44</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/04/2022 17:12:42</publishTime>
+    </File>
+    <File Include="Views/Location/Index.cshtml">
+      <publishTime>10/23/2017 23:41:42</publishTime>
+    </File>
+    <File Include="Views/Manage/AddPhoneNumber.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Manage/ChangePassword.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Manage/Index.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Manage/ManageLogins.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Manage/SetPassword.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/Merk/Index.cshtml">
+      <publishTime>11/06/2017 21:20:22</publishTime>
+    </File>
+    <File Include="Views/Report/Fixed_Asset_Consolidation_Report.cshtml">
+      <publishTime>02/04/2022 13:47:48</publishTime>
+    </File>
+    <File Include="Views/Report/ReportAsset.cshtml">
+      <publishTime>04/02/2022 12:46:54</publishTime>
+    </File>
+    <File Include="Views/Report/ReportAssetClass.cshtml">
+      <publishTime>04/13/2022 08:44:37</publishTime>
+    </File>
+    <File Include="Views/Report/ReportFixAsset.cshtml">
+      <publishTime>04/09/2022 14:30:38</publishTime>
+    </File>
+    <File Include="Views/Report/ReportSerahTerima.cshtml">
+      <publishTime>11/23/2017 02:30:06</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>10/23/2017 09:13:22</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>05/24/2022 14:20:17</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/04/2022 13:40:09</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutCustom.cshtml">
+      <publishTime>06/04/2022 13:38:25</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutLogin.cshtml">
+      <publishTime>06/04/2022 13:39:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginMenu.cshtml">
+      <publishTime>11/07/2017 11:02:46</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>10/23/2017 09:13:24</publishTime>
+    </File>
+    <File Include="Views/TypeAsset/Index.cshtml">
+      <publishTime>10/23/2017 21:24:34</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>10/23/2017 09:12:44</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/23/2017 09:12:44</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/29/2022 10:59:46</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

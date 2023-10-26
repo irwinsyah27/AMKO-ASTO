@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_HCGS_ASSET_KPT" Class="DB_APPSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=PABBAPCO401\sqlexpress;Initial Catalog=DB_HCGS_ASSET_KPT;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DB_HCGS_ASSET_KPTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="PROFILE.TBL_R_PROFILE" Member="TBL_R_PROFILEs">
+    <Type Name="TBL_R_PROFILE">
+      <Column Name="PROFILE_PID" Type="System.String" DbType="VarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PROFILE_DESC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="PROFILE.VW_USER_PROFILE" Member="VW_USER_PROFILEs">
+    <Type Name="VW_USER_PROFILE">
+      <Column Name="USER_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PROFILE_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PROFILE_DESC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMPLOYEE_ID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NAMA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="JABATAN" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Departemen" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="PROFILE.VW_GP_PROFILE" Member="VW_GP_PROFILEs">
+    <Type Name="VW_GP_PROFILE">
+      <Column Name="PROFILE_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PROFILE_DESC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USER_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="EMPLOYEE_ID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="PROFILE.cusp_GetAccessMenu" Method="cusp_GetAccessMenu">
+    <Parameter Name="MENU_LINK" Parameter="mENU_LINK" Type="System.String" DbType="VarChar(128)" />
+    <Parameter Name="PROFILE_PID" Parameter="pROFILE_PID" Type="System.String" DbType="VarChar(128)" />
+    <ElementType Name="cusp_GetAccessMenuResult">
+      <Column Name="PROFILE_MENU_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="MENU_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="MENU_LINK" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PROFILE_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="C" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="R" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="U" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="D" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="PROFILE.cusp_GetProfileMenu" Method="cusp_GetProfileMenu">
+    <Parameter Name="PROFILE_PID" Parameter="pROFILE_PID" Type="System.String" DbType="VarChar(128)" />
+    <Parameter Name="EMP_ID" Parameter="eMP_ID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="cusp_GetProfileMenuResult">
+      <Column Name="PROFILE_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PROFILE_DESC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MENU_PID" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="MENU_DESC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PARENT_ID" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="SORT_ORDER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MENU_LINK" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PARENT_DESC" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MAPPING_GP" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="PROFILE.cusp_GetDetailProfile" Method="cusp_GetDetailProfile">
+    <Parameter Name="NRP" Parameter="nRP" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="GPID" Parameter="gPID" Type="System.String" DbType="VarChar(128)" />
+    <Parameter Name="GPID_CODE" Parameter="gPID_CODE" Type="System.Int32" DbType="Int" />
+    <Parameter Name="GPID_DESC" Parameter="gPID_DESC" Type="System.String" DbType="VarChar(200)" />
+    <ElementType Name="cusp_GetDetailProfileResult">
+      <Column Name="EMPLOYEE_ID" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BIRTH_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STATUS_EMPLOYEE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GRADE" Type="System.String" DbType="VarChar(53)" CanBeNull="true" />
+      <Column Name="POS_TITLE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DEPT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DSTRCT_CODE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="GPID" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="GPID_CODE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GPID_DESC" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17.5, 16.5" name="DC_AMKO">
+  <DataContextMoniker Name="/DC_AMKODataContext" />
+  <nestedChildShapes>
+    <classShape Id="074e81c8-9a1e-4c16-9a59-1410bf49bbde" absoluteBounds="3, 1.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_CONDITION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3563e4d6-a402-4a82-ae27-5080682c9724" absoluteBounds="3.0150000000000006, 2.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34bbee09-bcfd-4560-bdda-030ca6a87a6b" absoluteBounds="3, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_DEPT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42f2d50a-de35-4583-af73-8dcc67cee2b2" absoluteBounds="3.0149999999999997, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aeefe70b-0006-400e-a629-827b77250c78" absoluteBounds="5.375, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_MERK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0793049c-7245-4b9a-808b-f2912023eb5f" absoluteBounds="5.39, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d041428e-4546-42d2-a350-7688f7792a66" absoluteBounds="5.375, 1.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_TYPE_ASSET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c9fd73a-14dd-439e-b8a2-f3f8f46def23" absoluteBounds="5.39, 2.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a1446d0-5f8b-4ab9-827d-c8b45622f99d" absoluteBounds="7.75, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_LOCATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33adf252-f895-4369-93ab-be8f067dc912" absoluteBounds="7.7650000000000006, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="64eb7d74-9e5c-4e67-be63-5525fb4ebcd5" absoluteBounds="5.375, 3.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_T_HISTORY_ASSET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13e40c97-25e2-4fb5-aff3-3faaf5bc23bb" absoluteBounds="5.39, 3.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cdc88788-1701-4c80-ae5d-3bc5d368e38a" absoluteBounds="3.125, 3.875, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/DC_AMKODataContext/VW_HISTORY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fa9ba57-c760-46a5-b338-6064eb43f8e1" absoluteBounds="3.14, 4.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c147f770-1f3c-42e5-812e-8d3edec0dd05" absoluteBounds="0.875, 0.5, 2, 5.4246240234375">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_M_ASSET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8235f570-71c6-4a27-81de-6007a5e2749a" absoluteBounds="0.89000000000000012, 0.96, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13b45dc0-8abe-4523-8493-15c04ba4ca6a" absoluteBounds="7.75, 1.875, 2, 9.0783512369791648">
+      <DataClassMoniker Name="/DC_AMKODataContext/VW_ASSET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0900374-e974-450a-a6d9-1151e9d93a36" absoluteBounds="7.7650000000000006, 2.335, 1.9700000000000002, 8.5183512369791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6362340-f755-4c2b-b3e4-54f1f963c8b7" absoluteBounds="0.875, 7.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DC_AMKODataContext/VW_DASHBOARD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4c9399f-bf6a-48fc-b0d2-f25cb1b6cbb4" absoluteBounds="0.89000000000000012, 7.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ac87be3-3e71-46bd-9f8c-6819a868e07b" absoluteBounds="12.75, 0.5, 2, 6.1938297526041657">
+      <DataClassMoniker Name="/DC_AMKODataContext/VW_ASSET_API" />
+      <nestedChildShapes>
+        <elementListCompartment Id="057964a0-4fcd-4771-9565-845f5cf9129c" absoluteBounds="12.765, 0.96, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a8ffe9d-2a71-45f3-8850-492a2bc51da1" absoluteBounds="15.25, 0.5, 2, 3.1170068359375">
+      <DataClassMoniker Name="/DC_AMKODataContext/VW_HISTORY_API" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b35ee2d-1d80-4010-ad30-a7712d0500ec" absoluteBounds="15.265, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25d970b2-4b2f-49eb-a50f-dcdeccccbeaf" absoluteBounds="5.375, 5.875, 2, 10.424461263020833">
+      <DataClassMoniker Name="/DC_AMKODataContext/VW_KARYAWAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efe1ddbc-1190-44da-b4b9-b0e12ec605f1" absoluteBounds="5.39, 6.335, 1.9700000000000002, 9.8644612630208321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b53ec95-25f1-48ac-a060-e3e0cd72e5c3" absoluteBounds="0.875, 9.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_COA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f40e66c6-2f3f-4cb4-bc63-7caf5af9722a" absoluteBounds="0.89, 9.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="47e3eb39-c7d8-427a-9717-6649257c9f70" absoluteBounds="3.125, 7.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_SUB_ASSET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae336851-b999-4fa5-988f-fbb1bbbe7d7f" absoluteBounds="3.14, 7.8350000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0051d7ac-4d3a-4414-b991-1f3d04624caf" absoluteBounds="3.125, 8.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_EGI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b27f76eb-5072-4cba-bdc6-3382fcd39a5c" absoluteBounds="3.14, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b9a6e60-74d4-4644-a1ac-413fe17d5ffc" absoluteBounds="3.125, 10.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DC_AMKODataContext/TBL_R_MUTASI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df4fcb9a-8e8e-419f-b628-0ff6e090ef92" absoluteBounds="3.14, 10.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="389cd5c6-5dba-4129-895f-d1283b5349bc" absoluteBounds="10.25, 0.5, 2, 6.7707340494791657">
+      <DataClassMoniker Name="/DC_AMKODataContext/VW_ASSET_FA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13e67465-1b82-41c5-920a-cfc321425254" absoluteBounds="10.265, 0.96, 1.9700000000000002, 6.2107340494791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1dc992fa-6e52-42c6-858b-4bc69622b906" absoluteBounds="7.75, 11.25, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/DC_AMKODataContext/VW_DEPARTEMEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bdb2008-ff2b-4395-a403-80c460880c14" absoluteBounds="7.765, 11.71, 1.9700000000000002, 0.44169108072916663" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

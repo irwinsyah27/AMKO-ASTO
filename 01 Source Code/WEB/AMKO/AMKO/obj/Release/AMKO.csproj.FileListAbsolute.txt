@@ -1,0 +1,111 @@
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\csc.exe
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\System.Collections.Immutable.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\System.Reflection.Metadata.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\vbc.exe
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\VBCSCompiler.exe
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\VBCSCompiler.exe.config
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\AMKO.dll.config
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\AMKO.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\AMKO.pdb
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Antlr3.Runtime.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\EntityFramework.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\EntityFramework.SqlServer.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Google.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Twitter.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Web.Infrastructure.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Newtonsoft.Json.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Owin.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Helpers.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Mvc.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Optimization.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Razor.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.Deployment.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.Razor.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\WebGrease.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Helpers.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Mvc.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Optimization.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Razor.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.Deployment.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.Razor.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Antlr3.Runtime.pdb
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Newtonsoft.Json.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\EntityFramework.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\EntityFramework.SqlServer.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Google.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Twitter.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\obj\Release\AMKO.dll
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\obj\Release\AMKO.pdb
+D:\DATA\APLIKASI KPP\ASTO\AMKO\01 Source Code\AMKO\AMKO\obj\Release\AMKO.csprojResolveAssemblyReference.cache
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\csc.exe
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\System.Collections.Immutable.dll
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\System.Reflection.Metadata.dll
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\vbc.exe
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\VBCSCompiler.exe
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\roslyn\VBCSCompiler.exe.config
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\AMKO.dll.config
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\AMKO.dll
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\AMKO.pdb
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Helpers.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Mvc.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Optimization.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.Razor.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.Deployment.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\System.Web.WebPages.Razor.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Antlr3.Runtime.pdb
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Newtonsoft.Json.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\EntityFramework.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\EntityFramework.SqlServer.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.Core.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Facebook.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Cookies.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.OAuth.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Google.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.Twitter.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\obj\Release\AMKO.csprojResolveAssemblyReference.cache
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\obj\Release\AMKO.dll
+D:\03. Project\01. Web\AMKO\01 Source Code\AMKO\AMKO\obj\Release\AMKO.pdb

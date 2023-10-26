@@ -1,0 +1,221 @@
+﻿@{
+    ViewBag.dashboard = "Selamat Datang";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+    ViewBag.pathParent = Url.Content("~").Substring(0, Url.Content("~").Length - 1);
+}
+
+<input type="hidden" id="urlPath" name="urlPath" value="@ViewBag.pathParent" />
+
+
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-1">Pilih Tahun</label>
+                <div class="col-md-2">
+                    <input id="dt_tahun" />
+                </div>
+                @*<div class="col-md-2">
+                    <button class="btn btn-primary"><span class="glyphicon glyphicon-download">&nbsp;</span>Submit</button>
+                </div>*@
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="text-center"><h5>EXTRACOMPTABLE ASSET 2017</h5></div> 
+            </div>
+
+            <div class="panel-body">
+
+                <div>
+                    <div id="grid" style="width:50%"></div>
+                </div>
+
+                <br />
+
+                <div>
+                    <div id="chart" style="height:300px; width:90%"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+  
+
+  
+
+</div>
+
+<script>
+
+    kendo.culture("en-GB");
+
+    var yearNow = (new Date()).getFullYear();
+
+    $(document).ready(function () {
+
+      
+        loadGrid(yearNow);
+        loadChart(yearNow);
+
+        $("#dt_tahun").kendoDatePicker({
+            format: "yyyy",
+            start: "decade",
+            depth: "decade",
+            value: new Date(),
+            //value: new Date(),
+            change: function (e) {
+                var i_str_tahun = $("#dt_tahun").val();
+
+                loadGrid(i_str_tahun);
+                loadChart(i_str_tahun);
+
+            }
+        })
+    });
+
+    function loadGrid(e) {
+        $("#grid").empty();
+        var grid = $("#grid").kendoGrid({
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: {
+                        url: $("#urlPath").val() + "/Home/ReadGrid?s_str_tahun=" + e,
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status == 0) {
+                                alert(data.responseJSON.error);
+                            }
+
+                        }
+                    },
+
+                    parameterMap: function (data, operation) {
+
+                        return kendo.stringify(data)
+
+                    }
+                },
+                pageSize: 100,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true,
+                schema: {
+                    data: "Data",
+                    total: "Total",
+                    model: {
+
+                    }
+                }
+            },
+           // height: 500,
+           // filterable: true,
+            sortable: true,
+           // pageable: true,
+            resizable: true,
+            groupable: false,
+            //pageable: {
+            //    refresh: true,
+            //    buttonCount: 10,
+            //    input: true,
+            //    pageSizes: [10, 20, 50, 100, 1000, 100000],
+            //    info: true,
+            //    messages: {
+            //    }
+            //},
+           // editable: "inline",
+            columns: [
+                { field: "BULAN_DESC", title: "Bulan", width: "100px" },
+                { field: "TOTAL_ASSET", title: "Total Asset", width: "100px"},
+                { field: "TOTAL_AMOUNT", title: "Total Amount", width: "100px", format: "{0:C}" },
+            ],
+            dataBinding: function () {
+                window.rowNo = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+            }
+        });
+    }
+
+    function loadChart(e) {
+
+        $.ajax({
+            type: "POST",
+            url: $("#urlPath").val() + "/Home/ReadChart?s_str_tahun=" + e,
+            contentType: "application/json",
+            success: function (e) {
+
+                console.log(e);
+
+                $("#chart").kendoChart({
+                    title: {
+                       // text: "CHART EXTRACOM ASSET 2017"
+                    },
+                    legend: {
+                        position: "bottom"
+                    },
+                    series: [
+                        {
+                            type: "column",
+                            data: e.amount,
+                            color: 'blue',
+                            labels: {
+                                visible: true,
+                                //format: "{0}%"
+                            }
+                        },
+                        //{
+                        //    type: "line",
+                        //    data: e.ritase,
+                        //    color: "#f26a6a",
+                        //    //labels: {
+                        //    //    visible: getLabel,
+                        //    //    format: "{0}%"
+                        //    //}
+
+                        //},
+                    ],
+                    categoryAxis: {
+                        categories: e.bulan,
+                    },
+                    valueAxis: {
+                        labels: {
+                            //format: "{0}%"
+                        },
+                        line: {
+                            // visible: true
+                        }
+                    },
+                    tooltip: {
+                        visible: true,
+                        color: 'white'
+                    }
+
+                });
+
+
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+            }
+
+        });
+    }
+
+  
+
+</script>
+

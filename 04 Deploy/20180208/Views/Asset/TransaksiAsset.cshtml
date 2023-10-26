@@ -1,0 +1,606 @@
+﻿@{
+    ViewBag.Title = "Transaksi";
+    ViewBag.dashboard = "Register Extracomptable";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+    ViewBag.pathParent = Url.Content("~").Substring(0, Url.Content("~").Length - 1);
+}
+
+<input type="hidden" id="urlPath" name="urlPath" value="@ViewBag.pathParent" />
+<input type="hidden" id="hd_status" value="@ViewData["status"]" />
+<input type="hidden" id="hd_assetNo" value="@ViewData["asset_no"]" />
+
+<div class="row" id="form">
+
+    <div class="col-md-12">
+
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Kode Asset</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_kodeAsset" name="tx_kodeAsset" class="form-control" data-bind="value: ASSET_NUMBER" readonly/>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Nama Asset *</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_namaAsset" name="tx_namaAsset" data-bind="value: ASSET_NAME" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Tanggal Asset *</label>
+                <div class="col-md-4">
+                    <input type="text" id="dt_tglAsset" name="dt_tglAsset"  data-bind="value: ASSET_DATE"style="width:100%" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Tgl. Serah Terima </label>
+                <div class="col-md-4">
+                    <input type="text" id="dt_tglSerahTerima" name="dt_tglSerahTerima" data-bind="value: ST_DATE" style="width:100%" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Jenis Asset</label>
+                <div class="col-md-4">
+                    <input type="text" id="dd_jenisAsset" name="dd_JenisAsset" data-bind="value: TYPE_CODE, enabled: isTypeEnabled" style="width:100%" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Serial Number</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_sn" name="tx_sn" data-bind="value: SN" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Merk</label>
+                <div class="col-md-4">
+                    <input type="text" id="dd_merk" name="dd_merk" data-bind="value: MERK_CODE" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">No. PR</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_noPr" name="tx_noPr" data-bind="value: NO_PR" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">PIC</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_pic" data-bind="value: PIC" style="width:100%" class="form-control" readonly/>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary" id="btn_cariPic" onclick="viewEmployee(1) "><span class="glyphicon glyphicon-search">&nbsp;</span>Cari</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Departemen</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_departemen" name="dd_departemen" data-bind="value: DEPT_CODE" class="form-control" readonly />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Order By</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_orderBy" data-bind="value: ORDER_BY" name="tx_orderBy" class="form-control" readonly />
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" id="btn_cariOrderBy" onclick="viewEmployee(2)"><span class="glyphicon glyphicon-search">&nbsp;</span>Cari</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Amount</label>
+                <div class="col-md-4">
+                    <input id="tx_amount" name="tx_amount" data-bind="value: AMOUNT" style="width:100%" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Kondisi *</label>
+                <div class="col-md-4">
+                    <input type="text" id="dd_kondisi" name="dd_kondisi" data-bind="value: COND_CODE" style="width:100%" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Lokasi *</label>
+                <div class="col-md-4">
+                    <input type="text" id="dd_lokasi" name="dd_lokasi" data-bind="value: LOCATION_CODE" style="width:100%" />
+                </div>
+            </div>
+        </div>    
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Remark</label>
+                <div class="col-md-4">
+                    <input type="text" id="tx_remark" name="tx_remark" data-bind="value: REMARK" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2">Photo/Gambar</label>
+                <div class="col-md-4">
+                    <input type="file" id="fl_img" style="width:100%">
+                    <input type="hidden" id="tx_img" data-bind="value: IMG" />
+                </div>
+                <div class="col-md-2">
+                   <img id="ig_img" src="" style="width:100%; height:100px" />
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div class="col-md-5">
+                    <button class="btn btn-primary" onclick="save()"><span class="glyphicon glyphicon-save">&nbsp;</span>Save</button> &nbsp;
+                    <button class="btn btn-danger"  onclick="cancel()"><span class="glyphicon glyphicon-remove">&nbsp;</span>Cancel</button>
+                </div>
+
+               
+            </div>
+        </div>
+       
+    </div>
+
+</div>
+
+<div class="row" style="display:none">
+
+    <div id="wnd_employee">
+           <div id="gridEmployee"></div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    var statusBtnCari  = ""
+
+    $(document).ready(function () { 
+
+        $("#dt_tglAsset").kendoDatePicker({
+            format: "dd/MM/yyyy",
+            value: new Date()
+        })
+
+        $("#dt_tglSerahTerima").kendoDatePicker({
+            format: "dd/MM/yyyy",
+            value: new Date()
+        })
+
+        $("#fl_img").kendoUpload({
+            multiple: false,
+            async: {
+                saveUrl: "save",
+                //removeUrl: "remove",
+                autoUpload: false
+            },
+            upload: uploadFile,
+            success: onSuccessUpload
+        });
+
+
+        $("#wnd_employee").kendoWindow({
+            width: "800px",
+            height: "400px",
+            title: "Data Karyawan",
+            visible: false,
+            modal : true,
+            actions: [
+                "Close"
+            ],
+            //close: onClose
+        })
+
+       
+
+        if ($("#hd_status").val() == "UPDATE") {
+
+
+            $.ajax({
+                type: "GET",
+                url: $("#urlPath").val() + "/Asset/ReadAsset?s_str_assetNo=" + $("#hd_assetNo").val(),
+                contentType: "application/json",
+                dataType: "json",
+                success: function (response) {
+                    if (response.status) {
+
+                        viewModel.set("isTypeEnabled", false)
+                        
+                        viewModel.set("ASSET_NUMBER", response.data.ASSET_NUMBER)
+                        viewModel.set("ASSET_NAME", response.data.ASSET_NAME)
+                        viewModel.set("ASSET_DATE", kendo.parseDate(kendo.toString(response.data.ASSET_DATE, "dd/MM/yyyy")))
+                        viewModel.set("ST_DATE", kendo.parseDate(kendo.toString(response.data.ST_DATE, "dd/MM/yyyy")))
+                        viewModel.set("MERK_CODE", response.data.MERK_CODE)
+                        viewModel.set("SN", response.data.SN)
+                        viewModel.set("TYPE_CODE", response.data.TYPE_CODE)
+                        viewModel.set("NO_PR", response.data.NO_PR)
+                        viewModel.set("PIC", response.data.PIC)
+                        viewModel.set("DEPT_CODE", response.data.DEPT_CODE)
+                        viewModel.set("ORDER_BY", response.data.ORDER_BY)
+                        viewModel.set("AMOUNT", response.data.AMOUNT)
+                        viewModel.set("COND_CODE", response.data.COND_CODE)
+                        viewModel.set("LOCATION_CODE", response.data.LOCATION_CODE)
+                        viewModel.set("REMARK", response.data.REMARK)
+                        viewModel.set("IMG", response.data.IMG)
+
+                        showImage(response.data.IMG);
+                    } else {
+                        alert(response.error)
+                    }
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                }
+
+            });
+        }
+
+        kendo.bind($("#form"), viewModel);
+
+        $("#tx_amount").kendoNumericTextBox({
+            min: 0,
+            step: 1
+        });
+
+
+
+    })
+
+    function loadGridEmployee() {
+        $("#gridEmployee").empty();
+        var grid = $("#gridEmployee").kendoGrid({
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: {
+                        url: $("#urlPath").val() + "/Asset/ReadEmployee",
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status == 0) {
+                                alert(data.responseJSON.error);
+                            }
+
+                        }
+                    },
+
+
+                    parameterMap: function (data, operation) {
+
+                        return kendo.stringify(data)
+
+                    }
+                },
+                pageSize: 100,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true,
+                schema: {
+                    data: "Data",
+                    total: "Total",
+                    model: {
+                        id: "Nrp",
+                        fields: {
+                            Nrp: { type: "string", filterable: true, sortable: true, editable: false },
+                            Nama: { type: "string", filterable: true, sortable: true, editable: false },
+                            JABATAN: { type: "string", filterable: true, sortable: true, editable: false },
+                            Departemen: { type: "string", filterable: true, sortable: true, editable: false },
+                        }
+                    }
+                }
+            },
+            height: 500,
+            filterable: true,
+            sortable: true,
+            pageable: true,
+            resizable: true,
+            groupable: false,
+            pageable: {
+                refresh: true,
+                buttonCount: 10,
+                input: true,
+                pageSizes: [10, 20, 50, 100, 1000, 100000],
+                info: true,
+                messages: {
+                }
+            },
+            editable: false,
+            columns: [
+                {
+                    command: [{ text: "Pilih", click: pilih }], title: "Action", width: "100px"
+                },
+                { field: "Nrp", title: "NRP", width: "100px", format: "{0:dd/MM/yyyy}" },
+                { field: "Nama", title: "Nama", width: "150px" },
+                { field: "JABATAN", title: "Jabatan", width: "150px" },
+                { field: "Departemen", title: "Dept.", width: "150px" },
+            ],
+            dataBinding: function () {
+                window.rowNo = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+            }
+        });
+    }
+
+    var viewModel = kendo.observable({
+        ASSET_NUMBER: "",
+        ASSET_NAME: "",
+        ASSET_DATE: "",
+        ST_DATE: "",
+        MERK_CODE: "",
+        SN: "",
+        TYPE_CODE: "",
+        NO_PR: "",
+        PIC: "",
+        DEPT_CODE: "",
+        ORDER_BY: "",
+        AMOUNT: "",
+        COND_CODE: "",
+        LOCATION_CODE: "",
+        REMARK: "",
+        IMG : "",
+        isTypeEnabled: true
+    })
+
+    $("#dd_jenisAsset").kendoDropDownList({
+       filter: "startswith",
+       dataSource: {
+            type: "json",
+           transport: {
+                read: {
+                   url: $("#urlPath").val() + "/Asset/AjaxReadJenisAsset",
+                    contentType: "application/json",
+                   type: "POST",
+                   cache: false
+                }
+            },
+            schema: {
+               data: "Data",
+               total: "Total"
+           }
+        },
+        dataTextField: "TYPE_NAME",
+        dataValueField: "TYPE_CODE",
+       optionLabel: "Pilih...",
+    });
+
+    $("#dd_kondisi").kendoDropDownList({
+        filter: "startswith",
+        dataSource: {
+            type: "json",
+            transport: {
+                read: {
+                    url: $("#urlPath").val() + "/Asset/AjaxReadKondisi",
+                    contentType: "application/json",
+                    type: "POST",
+                    cache: false
+                }
+            },
+            schema: {
+                data: "Data",
+                total: "Total"
+            }
+        },
+        dataTextField: "COND_NAME",
+        dataValueField: "COND_CODE",
+        optionLabel: "Pilih...",
+    });
+
+    $("#dd_lokasi").kendoDropDownList({
+        filter: "startswith",
+        dataSource: {
+            type: "json",
+            transport: {
+                read: {
+                    url: $("#urlPath").val() + "/Asset/AjaxReadLokasi",
+                    contentType: "application/json",
+                    type: "POST",
+                    cache: false
+                }
+            },
+            schema: {
+                data: "Data",
+                total: "Total"
+            }
+        },
+        dataTextField: "LOCATION_NAME",
+        dataValueField: "LOCATION_CODE",
+        optionLabel: "Pilih...",
+    });
+
+
+    //$("#dd_merk").kendoDropDownList({
+    //    filter: "startswith",
+    //    dataSource: {
+    //        type: "json",
+    //        transport: {
+    //            read: {
+    //                url: $("#urlPath").val() + "/Asset/AjaxReadMerk",
+    //                contentType: "application/json",
+    //                type: "POST",
+    //                cache: false
+    //            }
+    //        },
+    //        schema: {
+    //            data: "Data",
+    //            total: "Total"
+    //        }
+    //    },
+    //    dataTextField: "MERK_NAME",
+    //    dataValueField: "MERK_CODE",
+    //    optionLabel: "Pilih...",
+    //});
+
+    function viewEmployee(e) {
+
+        statusBtnCari = e;
+
+        loadGridEmployee()
+        $("#wnd_employee").data("kendoWindow").center().open();
+    }
+
+    function pilih(e) {
+        e.preventDefault;
+        var dataItem = this.dataItem($(e.currentTarget).closest("tr"));
+
+        if (statusBtnCari == 1) {
+            viewModel.set("PIC", dataItem.Nrp)
+            viewModel.set("DEPT_CODE", dataItem.Departemen)
+        } else {
+            viewModel.set("ORDER_BY", dataItem.Nrp)
+        }
+
+        $("#wnd_employee").data("kendoWindow").center().close();
+       
+    }
+
+    function save() {
+
+        if (viewModel.ASSET_NAME == "" ||
+            viewModel.ASSET_DATE == "" ||
+            viewModel.COND_CODE == "" ||
+            viewModel.LOCATION_CODE == "" ||
+            viewModel.TYPE_CODE == ""
+            ) {
+            alert("Data Mandatory (*) harus di isi !")
+        } else {
+            if (viewModel.AMOUNT == '' || viewModel.AMOUNT == null) {
+                saveAsset()
+            }
+            else
+            {
+                //if ((viewModel.AMOUNT < 250000 || viewModel.AMOUNT > 4999000)) {
+                   // alert("Amount tidak termasuk Asset Extracomptable !")
+               // } else {
+                   // saveAsset()
+               // }
+				
+				saveAsset()
+            }
+
+        }     
+    
+    }
+
+    function saveAsset() {
+
+        if ($("#hd_status").val() == "INSERT") {
+            $.ajax({
+                type: "POST",
+                url: $("#urlPath").val() + "/Asset/InsertAsset",
+                contentType: "application/json",
+                data: JSON.stringify(viewModel),
+                success: function (response) {
+                    if (response.status) {
+                        alert(response.remark)
+                    } else {
+                        alert(response.error)
+                    }
+                    location.reload();
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                }
+
+            });
+        } else {
+
+            console.log(viewModel.ASSET_DATE)
+            $.ajax({
+                type: "POST",
+                url: $("#urlPath").val() + "/Asset/UpdateAsset",
+                contentType: "application/json",
+                data: JSON.stringify(viewModel),
+                success: function (response) {
+                    if (response.status) {
+                        alert(response.remark)
+                    } else {
+                        alert(response.error)
+                    }
+                    location.reload();
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                }
+
+            });
+        }
+    }
+
+
+    function cancel() {
+        window.location = ($("#urlPath").val() + "/Asset/Index")
+    }
+
+    function uploadFile(e) {
+        var files = e.files;
+        $.each(files, function () {
+            $("#fl_img").data("kendoUpload").options.async.saveUrl = $("#urlPath").val() + '/Asset/UploadImage';
+        });
+    }
+
+    function onSuccessUpload(e) {
+
+        viewModel.set("IMG", e.response.path)
+
+        showImage(e.response.path);
+
+        //var html = "";
+        //html += e.response;
+        //html += "<br/>";
+        //html += "<a href='" + $("#urlPath").val() + "/Reports/ReportUploadRegResult.aspx?pid=" + iSessUpload + "' target='_blank'>";
+        //html += "View upload result";
+        //html += "</a>";
+
+        //$("#urlResultUpload").empty();
+        //$("#urlResultUpload").append(html);
+        //$("#gridInquiryDokumen").data("kendoGrid").dataSource.read()
+    }
+
+    function showImage(e) {
+        $("#ig_img").attr('src', $("#urlPath").val() + e);
+    }
+
+</script>

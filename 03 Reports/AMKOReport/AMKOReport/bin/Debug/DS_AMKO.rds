@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DS_AMKO">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=pabbsqco401;Initial Catalog=DB_HCGS_ASSET_KPT</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>3483df8f-3d58-4115-943a-eaf272daa350</DataSourceID>
+</RptDataSource>

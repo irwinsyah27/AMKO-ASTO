@@ -1,0 +1,149 @@
+﻿@{
+    ViewBag.Title = "Master Merk";
+    ViewBag.dashboard = "Master Merk";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+    ViewBag.pathParent = Url.Content("~").Substring(0, Url.Content("~").Length - 1);
+}
+
+
+<input type="hidden" id="urlPath" name="urlPath" value="@ViewBag.pathParent" />
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <div class="col-md-12 col-xs-12">
+            <div id="grid"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        loadGrid();
+    });
+
+    function loadGrid() {
+        $("#grid").empty();
+        var grid = $("#grid").kendoGrid({
+            dataSource: {
+                type: "json",
+                transport: {
+                    read: {
+                        url: $("#urlPath").val() + "/Merk/AjaxRead",
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status == 0) {
+                                alert(data.responseJSON.error);
+                            }
+
+                        }
+                    },
+
+                    create: {
+                        url: $("#urlPath").val() + "/Merk/AjaxInsert",
+                        contentType: "application/json",
+                        type: "POST",
+                        complete: function (data) {
+                            if (data.responseJSON.status) {
+                                $("#grid").data("kendoGrid").dataSource.read()
+                            } else {
+                                alert(data.responseJSON.error);
+                                $("#grid").data("kendoGrid").dataSource.read()
+                            }
+                        }
+                    },
+
+                    update: {
+                        url: $("#urlPath").val() + "/Merk/AjaxUpdate",
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status) {
+                                $("#grid").data("kendoGrid").dataSource.read()
+                            } else {
+                                alert(data.responseJSON.error);
+                                $("#grid").data("kendoGrid").dataSource.read()
+                            }
+                        }
+                    },
+
+                    destroy: {
+                        url: $("#urlPath").val() + "/Merk/AjaxDelete",
+                        contentType: "application/json",
+                        type: "POST",
+                        cache: false,
+                        complete: function (data) {
+                            if (data.responseJSON.status) {
+                                $("#grid").data("kendoGrid").dataSource.read()
+                            } else {
+                                alert(data.responseJSON.error)
+                                $("#grid").data("kendoGrid").dataSource.read()
+                            }
+                        }
+                    },
+
+                    parameterMap: function (data, operation) {
+
+                        return kendo.stringify(data)
+
+                    }
+                },
+                pageSize: 100,
+                serverPaging: true,
+                serverFiltering: true,
+                serverSorting: true,
+                schema: {
+                    data: "Data",
+                    total: "Total",
+                    model: {
+                        id: "MERK_CODE",
+                        fields: {
+                            MERK_CODE: { type: "string", filterable: true, sortable: true, editable: true },
+                            MERK_NAME: { type: "string", filterable: true, sortable: true, editable: true },
+                        }
+                    }
+                }
+            },
+            height: 500,
+            filterable: true,
+            sortable: true,
+            pageable: true,
+            resizable: true,
+            groupable: false,
+            pageable: {
+                refresh: true,
+                buttonCount: 10,
+                input: true,
+                pageSizes: [10, 20, 50, 100, 1000, 100000],
+                info: true,
+                messages: {
+                }
+            },
+            editable: "inline",
+            toolbar: ["create"],
+            columns: [
+               {
+                    title: "No",
+                    width: "20px",
+                    template: "#= ++rowNo #",
+                    filterable: false
+                },
+                { field: "MERK_CODE", title: "Kode Merk", width: "80px" },
+                { field: "MERK_NAME", title: "Nama Merk", width: "80px" },
+                {
+                    command: ["edit", "destroy"], title: "Action", width: "80px"
+                },
+            ],
+            dataBinding: function () {
+                window.rowNo = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+            }
+        });
+    }
+
+</script>
+
+
+
